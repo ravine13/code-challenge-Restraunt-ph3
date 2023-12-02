@@ -10,9 +10,11 @@ class Review:
     def get_rating(self):
         return self._rating 
     
+    @property
     def customer(self):
         return self._customer
     
+    @property
     def restaurant(self):
         return self._restaurant
 

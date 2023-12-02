@@ -20,4 +20,10 @@ class Restaurant:
     
     def get_customers(self):
         return list(set(review.customer for review in self.reviews))
+    
+    def average_star_rating(self):
+        if not self.reviews:
+            return 0
+        total_rating = sum(review.rating for review in self.reviews)
+        return total_rating/ len(self.reviews)
 
