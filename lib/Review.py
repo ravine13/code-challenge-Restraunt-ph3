@@ -1,3 +1,6 @@
+from customers import Customer
+from Restaurant import Restaurant
+
 class Review:
     all_reviews = [] 
 
@@ -21,3 +24,5 @@ class Review:
     @classmethod
     def all(cls):
         return cls.all_reviews
+    
+

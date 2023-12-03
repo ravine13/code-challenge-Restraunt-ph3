@@ -1,6 +1,4 @@
 
-from Review import Review
-
 class Customer:
     all_customers = []
 
@@ -45,4 +43,5 @@ class Customer:
     @classmethod
     def find_all_by_given_name(cls, name):
         return [customer for customer in cls.all_customers if customer.given_name == name]
+    
 
